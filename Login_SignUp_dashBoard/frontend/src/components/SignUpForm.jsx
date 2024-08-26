@@ -13,6 +13,10 @@ const SignUpForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      if(password!==confirmPassword){
+        alert("passwords didn't match");
+        return;
+      }
       const response = await axios.post('http://localhost:5000/api/signupdetails', { 
         name,email,password
       });
