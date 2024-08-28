@@ -27,7 +27,7 @@ const LoginForm = () => {
     <div className="flex items-center justify-center min-h-screen bg-slate-600">
       <div className="w-full max-w-md p-8 space-y-4 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-center text-gray-700">Login</h2>
-        {error && <p className="text-red-500">{error}</p>}
+        {error && <p className="text-slate-50 bg-red-600 rounded-2xl p-2">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -73,13 +73,13 @@ const LoginForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
+            className="w-full px-4 py-2 text-white bg-blue-600 hover:scale-95 duration-300 rounded-md hover:bg-red-700 focus:outline-none focus:bg-blue-700"
           >
             Login
           </button>
           <div>
             <span>Don&apos;t Have an Account sign up </span>
-            <NavLink className="text-lg text-blue-600 hover:underline font-bold" to={'/signupform'}>Sign Up</NavLink>
+            <NavLink className="text-lg text-blue-600 hover:underline hover:text-red-500 font-bold" to={'/signupform'}>Sign Up</NavLink>
           </div>
         </form>
       </div>

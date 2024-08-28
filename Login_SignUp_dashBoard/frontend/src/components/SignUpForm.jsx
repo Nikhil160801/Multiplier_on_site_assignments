@@ -91,13 +91,13 @@ const SignUpForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
+            className="w-full px-4 py-2 text-white bg-blue-600 duration-300 hover:scale-95 rounded-md hover:bg-red-700 focus:outline-none focus:bg-blue-700"
           >
             Sign Up
           </button>
           <div>
             <span>Do you have an Account </span>
-            <NavLink className="text-lg text-blue-600 hover:underline font-bold" to={'/'}>Log In</NavLink>
+            <NavLink className="text-lg text-blue-600 hover:text-red-500 hover:underline font-bold" to={'/'}>Log In</NavLink>
           </div>
         </form>
       </div>
